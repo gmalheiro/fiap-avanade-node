@@ -1,6 +1,7 @@
 import fs from "fs";
 
 console.log(process.argv);
+
 if (process.argv[2]) {
   const cmd = process.argv[2];
   let folders = [];
@@ -39,16 +40,16 @@ if (process.argv[2]) {
     default:
       console.log("Invalid command");
   }
-}
 
   folders.forEach((folder) => {
     if (!fs.existsSync(folder)) {
-       fs.mkdirSync(folder);
-       console.log("Pasta:", folder, "criada")
+      fs.mkdirSync(folder);
+      console.log("Pasta: ", folder, " criado.");
     } else {
-      console.log("Pasta:", folder, "já existe")
-    }});
-
+      console.log("Pasta: ", folder, " já existe.");
+    }
+  });
+}
 /*
 const dir = "./upload";
 const file = "lakers.txt";
