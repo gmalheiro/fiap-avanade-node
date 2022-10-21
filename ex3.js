@@ -2,7 +2,7 @@ import fs from "fs";
 
 console.log(process.argv);
 
-
+/*
 const dir = "./upload";
 const file = "lakers.txt";
 const path = `${dir}/${file}`;
@@ -17,9 +17,9 @@ if (!fs.existsSync(dir)) {
 } else {
   console.log(`Acessando o diretório: ${dir}`);
 }
+*/
 
-
- 
+/* 
 
 let msg = "O segundo melhor time de basquete do mundo é o Los Angeles Lakers";
 if (!fs.existsSync(path)) {
@@ -27,4 +27,4 @@ if (!fs.existsSync(path)) {
     if (err) throw err;
     console.log(`Arquivo ${file} criado com sucesso`);
   });
-} 
+} */
